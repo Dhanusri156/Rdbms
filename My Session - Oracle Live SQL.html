@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://livesql.oracle.com/apex/f?p=590:6:13550427334839::::: -->
+<html class="page-6 app-LIVESQL" lang="en" style="--js-sticky-top: 60px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  
+  <title>My Session - Oracle Live SQL</title>
+  <link rel="stylesheet" href="./My Session - Oracle Live SQL_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./My Session - Oracle Live SQL_files/Theme-Standard.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./My Session - Oracle Live SQL_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./My Session - Oracle Live SQL_files/Core.min(1).css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./My Session - Oracle Live SQL_files/Vita.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./My Session - Oracle Live SQL_files/livesql.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./My Session - Oracle Live SQL_files/xcode.css" type="text/css">
+<link rel="stylesheet" href="./My Session - Oracle Live SQL_files/xmlRenderer.min.css" type="text/css">
+
+  <link rel="apple-touch-icon" href="https://livesql.oracle.com/apex/r/livesql/590/files/static/v424/icons/app-icon-192.png"><link rel="icon" href="https://livesql.oracle.com/apex/r/livesql/590/files/static/v424/icons/app-icon-32.png">
+  
+
+<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><meta http-equiv="Cache-Control" content="no-cache"><meta name="theme-color" content="#000000">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="&lt;span class=&quot;u-vh&quot;&gt;Oracle&lt;/span&gt; &amp;APPLICATION_TITLE.">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="https://livesql.oracle.com/apex/r/livesql/livesql/manifest.json?v=22.1.3-140873327249&amp;lang=en">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="BUM28-7GUGJ-B7YY7-XUSPX-EJ96D",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"BUM28-7GUGJ-B7YY7-XUSPX-EJ96D";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eqeub4qaj37iejafaiabmmaeubsinzko-f-3d1a4b73e-clienttons-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"881309","ak.ai":parseInt("562634",10),"ak.ol":"0","ak.cr":32,"ak.ipv":6,"ak.proto":"h2","ak.rid":"11b8cdb1","ak.r":32446,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.bpcip":"2409:40f2:4e:fe82::","ak.cport":58819,"ak.gh":"49.44.199.150","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1686562126","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==H+EOCG3f0lu2jGgqm4F3AvfTCaEjqoxW6r5iBk4ELD6c7ATf1x8C1pFmFuVxvMIV4VTdQL+zI03kcIdjCDNQqIgXzYPYu7k4+QRZfEDnrOL+ZQ4VHqXjPeG9VrkXqZbtbUoJQpUu4N+xHSryLiCgdJ1oTXJuk6z0MULFbgrZDBnZsWCCO4Fc12BnUUB1ECBtIdsdsNBmeLhuwxEooQmDit1Jp5Opd+p1qxVx4CC2hQcazu/bUr0C2AI1TsEFpn9l/QvBzciTPW6J83AMUQFpW/4rvApj09+MtPRjbNoWL7FUNg7Lr+EH2/ITyqTM9pdnrDA+0qLancVuMDZvPo6Bsy1YhyNvi//GHz1EfZSQJ+3YuI0i6/Ksb9ipD8IqZQ2MrgFa+52+FkyNRg5QjBRCCNMWPszY59GHQ6AT/mpFwi4=","ak.pv":"13","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><link href="./My Session - Oracle Live SQL_files/BUM28-7GUGJ-B7YY7-XUSPX-EJ96D" rel="preload" as="script"><script id="boomr-scr-as" src="./My Session - Oracle Live SQL_files/BUM28-7GUGJ-B7YY7-XUSPX-EJ96D" async=""></script></head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-vita js-navExpanded js-navCollapsed--hidden t-PageBody--leftNav a-pwaInstall--available" id="t_PageBody">
+<a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form action="https://livesql.oracle.com/apex/wwv_flow.accept?p_context=590:6:13550427334839" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="">
+<input type="hidden" name="p_flow_id" value="590" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="6" id="pFlowStepId"><input type="hidden" name="p_instance" value="13550427334839" id="pInstance"><input type="hidden" name="p_page_submission_id" value="153072998018256338945357389443633153068" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="A" id="pReloadOnSubmit"><input type="hidden" value="590:6:13550427334839" id="pContext"><input type="hidden" value="153072998018256338945357389443633153068" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree is-active" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="true" fdprocessedid="5ovmn"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://livesql.oracle.com/apex/f?p=590:1000:13550427334839:::::" class="t-Header-logo-link"><img src="./My Session - Oracle Live SQL_files/oracle-logo.svg" alt="" class="apex-logo-img"><span class="apex-logo-text"><span class="u-vh">Oracle</span> Live SQL</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="3263937843120997057"><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:apex.theme42.dialog(&#39;f?p=590:44:13550427334839::::P44_PAGE_ID:6\u0026cs=3kaNFk9BDkpZB4db2PC2VFWwBy6EupK7S29apjCLGfv4OJ5CZL1ydHRayOYYtt29F2ex9oCX86rUeCHu76NQwVg\u0026p_dialog_cs=nj1D_FrFRr3MAHVwY9b12EMT5kNhhf9N_fkE4kMVFWVILjc9sNwqXiFn7nZkMraMGTgNrHbWAZZtSyiAfXyZ9Q&#39;,{title:&#39;Submit Feedback&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.gPageContext$)" title="" target="">
+    <span class="t-Icon fa fa-comment-o" aria-hidden="true"></span><span class="t-Button-label">Feedback</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://livesql.oracle.com/apex/f?p=590:HELP:13550427334839:::::" title="" target="">
+    <span class="t-Icon a-Icon icon-help" aria-hidden="true"></span><span class="t-Button-label">Help</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton" type="button" id="L7178662666532670" data-menu="menu_L7178662666532670" title="" aria-haspopup="menu" fdprocessedid="boy0dt">
+      <span class="t-Icon a-Icon icon-user" aria-hidden="true"></span><span class="t-Button-label">EDHANASHREE33@GMAIL.COM</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"><div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col ls-darkmode-switch apex-item-wrapper apex-item-wrapper--yes-no " id="P0_DARKMODE_CONTAINER"><div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
+<label for="P0_DARKMODE" id="P0_DARKMODE_LABEL" class="t-Form-label u-VisuallyHidden">Dark Mode</label>
+</div><div class="t-Form-inputContainer col col-null"><div class="t-Form-itemWrapper"><span class="a-Switch"><input type="checkbox" id="P0_DARKMODE" name="P0_DARKMODE" value="Y" data-on-label="On" data-off-value="N" data-off-label="Off"><span class="a-Switch-toggle"></span></span></div><span id="P0_DARKMODE_error_placeholder" class="a-Form-error" data-template-id="3114753988868898_ET"></span></div></div></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Main Navigation">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--classic" id="t_TreeNav" data-id="6_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-home"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:1000:13550427334839:::::" aria-level="1" aria-selected="false">Home</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-terminal"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::::" aria-level="1" aria-selected="false">SQL Worksheet</a></div></li><li id="t_TreeNav_2" role="none" class="a-TreeView-node a-TreeView-node--topLevel is-collapsible"><div role="none" class="a-TreeView-row is-selected is-current--top"></div><span class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content is-selected is-current--top"><span class="fa fa fa-bars"></span><a tabindex="0" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::" aria-level="1" aria-selected="true" aria-expanded="true">My Session</a></div><ul role="group"><li id="t_TreeNav_8" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:25:13550427334839:::::" aria-level="2" aria-selected="false">Previous Sessions</a></div></li><li id="t_TreeNav_9" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:21:13550427334839:::::" aria-level="2" aria-selected="false">Previously Viewed</a></div></li><li id="t_TreeNav_10" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:22:13550427334839:::::" aria-level="2" aria-selected="false">Utilization</a></div></li><li id="t_TreeNav_11" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:23:13550427334839:::::" aria-level="2" aria-selected="false">NLS</a></div></li></ul></li><li id="t_TreeNav_3" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-database"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:71:13550427334839:::::" aria-level="1" aria-selected="false">Schema</a></div></li><li id="t_TreeNav_4" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-magic"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:800:13550427334839:::::" aria-level="1" aria-selected="false" aria-expanded="false">Quick SQL</a></div></li><li id="t_TreeNav_5" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-file-text-o"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:17:13550427334839:::::" aria-level="1" aria-selected="false">My Scripts</a></div></li><li id="t_TreeNav_6" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-graduation-cap"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:12:13550427334839:::::" aria-level="1" aria-selected="false">My Tutorials</a></div></li><li id="t_TreeNav_7" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-cubes"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:49:13550427334839:::::" aria-level="1" aria-selected="false">Code Library</a></div></li></ul></div>
+</div>
+<script>(sessionStorage.getItem("nav.590.preferenceForExpanded") === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) && document.getElementById('t_PageBody').classList.add('js-navExpanded');</script>
+<script>
+    const labels = document.querySelectorAll(".a-TreeView .a-TreeView-label");
+    for (const label of labels) {
+        label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+    }
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title t-Body-title-shrink" id="t_Body_title"><nav aria-label="Breadcrumb" id="R5542950691385381860" class="t-BreadcrumbRegion t-BreadcrumbRegion--showBreadcrumb t-BreadcrumbRegion--useBreadcrumbTitle">
+  <div class="t-BreadcrumbRegion-top">
+    <div class="t-BreadcrumbRegion-body">
+      <div class="t-BreadcrumbRegion-breadcrumb"><ul class="t-Breadcrumb "><li class="t-Breadcrumb-item is-active" aria-current="page"><h1 class="t-Breadcrumb-label">My Session</h1></li></ul><div id="actions" class=""></div></div>
+        <div class="t-BreadcrumbRegion-title">
+        <h1 id="R5542950691385381860_heading" class="t-BreadcrumbRegion-titleText" data-apex-heading="">Breadcrumb</h1>
+      </div>
+    </div>
+    <div class="t-BreadcrumbRegion-buttons"><button class="t-Button t-Button--noLabel t-Button--icon t-Button--noUI t-Button--padRight" onclick="javascript:apex.theme42.dialog(&#39;f?p=590:4:13550427334839:::4:P4_PAGE_ID:6\u0026p_dialog_cs=OqMKUeRTPq-Wp-KshkKYSE8HHPo8hi5_QO67SY4QQj2L9zF3lLULDPY0eNMlh4_OR2V0e2B2bLGfG3bXPVUHAg&#39;,{title:&#39;About&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#B76202966535384334&#39;))" type="button" id="B76202966535384334" title="About" aria-label="About" fdprocessedid="o9qehe"><span class="t-Icon fa fa-info-circle-o" aria-hidden="true"></span></button><button class="t-Button t-Button--icon js-menuButton  t-Button--iconRight" data-menu="actions_menu" onclick="void(0);" type="button" id="B76202816845384333" aria-haspopup="menu" fdprocessedid="jo88sh"><span class="t-Icon t-Icon--left fa fa-angle-down" aria-hidden="true"></span><span class="t-Button-label">Actions</span><span class="t-Icon t-Icon--right fa fa-angle-down" aria-hidden="true"></span></button><button class="t-Button t-Button--icon t-Button--iconLeft" onclick="javascript:apex.theme42.dialog(&#39;f?p=590:20:13550427334839\u0026p_dialog_cs=dcLCvdBF_HnHh5voL7di4jW0hmv7-55H_THkym0_N0khAP9VPcyDHDqZvOZOP8EDpRqg8UO3BxzzGbNI-UvvLw&#39;,{title:&#39;Reset Session&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#B3160716580331640&#39;))" type="button" id="B3160716580331640" fdprocessedid="ep8ns"><span class="t-Icon t-Icon--left fa fa-rotate-left" aria-hidden="true"></span><span class="t-Button-label">Reset Session</span><span class="t-Icon t-Icon--right fa fa-rotate-left" aria-hidden="true"></span></button><button class="t-Button t-Button--icon t-Button--iconLeft t-Button--gapLeft t-Button--hot" onclick="javascript:apex.theme42.dialog(&#39;f?p=590:28:13550427334839:::RP,28::\u0026cs=3oyvWpuYWVd3SJ96eKP6JHBU9NdlyOpE7J45C6W42mDVcvmblSA3uol7xz2Gv_eeV2UGCY7u4pg8lU2ejk73yrw\u0026p_dialog_cs=vvY5dhFkKlW6P4TxhuB1E9lO4jpO9_0daiwA2f1OcPgFvsHnLvRWTUJhSm0jSwG9c-dbAQk6b8dc4NHVCOyIqQ&#39;,{title:&#39;Save Session&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#B1010440917058120079&#39;))" type="button" id="B1010440917058120079" fdprocessedid="mql9cb"><span class="t-Icon t-Icon--left fa fa-save" aria-hidden="true"></span><span class="t-Button-label">Save</span><span class="t-Icon t-Icon--right fa fa-save" aria-hidden="true"></span></button></div>
+  </div>
+  <div class="t-BreadcrumbRegion-bottom"></div>
+</nav>
+</div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="3049056495868860_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="3049056495868860_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div role="region" aria-label="Session Statements" class="t-Region t-Region--noPadding t-Region--hideHeader t-Region--scrollBody" id="R1035650027429323706">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R1035650027429323706_heading" data-apex-heading="">Session Statements</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     
+     
+     <div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div role="region" aria-label="Display Options" class="t-ButtonRegion t-Form--floatLeft t-ButtonRegion--slimPadding t-ButtonRegion--noUI t-Form--stretchInputs margin-bottom-none" id="R1010324116039220896">
+  <div class="t-ButtonRegion-wrap">
+    <div class="t-ButtonRegion-col t-ButtonRegion-col--left"><div class="t-ButtonRegion-buttons"></div></div>
+    <div class="t-ButtonRegion-col t-ButtonRegion-col--content">
+      <div class="container">
+<div class="row ">
+<div class="col col-4 apex-col-auto col-start"><div class="t-Form-fieldContainer rel-col  apex-item-wrapper apex-item-wrapper--select-list " id="P6_SORT_ORDER_CONTAINER"><div class="t-Form-labelContainer col col-2">
+<label for="P6_SORT_ORDER" id="P6_SORT_ORDER_LABEL" class="t-Form-label">Sort</label>
+</div>
+<div class="t-Form-inputContainer col col-2"><div class="t-Form-itemWrapper"><select id="P6_SORT_ORDER" name="P6_SORT_ORDER" class="selectlist apex-item-select" data-native-menu="false" size="1" onchange="apex.submit(&#39;P6_SORT_ORDER&#39;);" fdprocessedid="zkpwv6"><option value="ASC" selected="selected">most recent last</option>
+<option value="DESC">most recent first</option>
+</select></div><span id="P6_SORT_ORDER_error_placeholder" class="a-Form-error" data-template-id="3114813722868898_ET"></span></div></div></div><div class="col col-4 apex-col-auto "><div class="t-Form-fieldContainer rel-col  apex-item-wrapper apex-item-wrapper--select-list " id="P6_VIEW_CONTAINER"><div class="t-Form-labelContainer col col-2">
+<label for="P6_VIEW" id="P6_VIEW_LABEL" class="t-Form-label">View</label>
+</div>
+<div class="t-Form-inputContainer col col-2"><div class="t-Form-itemWrapper"><select id="P6_VIEW" name="P6_VIEW" class="selectlist apex-item-select" data-native-menu="false" size="1" onchange="apex.submit(&#39;P6_VIEW&#39;);" fdprocessedid="bd7o48"><option value="ALL" selected="selected">Statements and Results</option>
+<option value="STATEMENTS">Statements Only</option>
+<option value="RESULTS">Results Only</option>
+</select></div><span id="P6_VIEW_error_placeholder" class="a-Form-error" data-template-id="3114813722868898_ET"></span></div></div></div><div class="col col-4 apex-col-auto col-end"><div class="t-Form-fieldContainer rel-col  apex-item-wrapper apex-item-wrapper--select-list " id="P6_INCLUDE_CONTAINER"><div class="t-Form-labelContainer col col-2">
+<label for="P6_INCLUDE" id="P6_INCLUDE_LABEL" class="t-Form-label">Include</label>
+</div>
+<div class="t-Form-inputContainer col col-2"><div class="t-Form-itemWrapper"><select id="P6_INCLUDE" name="P6_INCLUDE" class="selectlist apex-item-select" data-native-menu="false" size="1" onchange="apex.submit(&#39;P6_INCLUDE&#39;);" fdprocessedid="hh67dy"><option value="ALL" selected="selected">All Statements</option>
+<option value="ERRORS">Errors Only</option>
+<option value="NO_ERRORS">Exclude Errors</option>
+</select></div><span id="P6_INCLUDE_error_placeholder" class="a-Form-error" data-template-id="3114813722868898_ET"></span></div></div></div>
+</div>
+</div>
+      <div class="t-ButtonRegion-buttons"></div>
+      
+    </div>
+    <div class="t-ButtonRegion-col t-ButtonRegion-col--right"><div class="t-ButtonRegion-buttons"></div></div>
+  </div>
+</div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div id="R1010323300540197488" class="s-Session--statements"><ul class="s-Session">
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+1</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement1" aria-label="Edit Statement 1" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520353986933637197236749525089030051\u0026cs=3CzddRmrb7-EjXLPvFa0Zcnsy3IV9innzas_7pEvl4kwEHQ4LsG8cjzZwLMXnjY6xkPkxQywlnSIrEHHm7BuiAg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement1" aria-label="Run Statement 1" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520353986933637197236749525089030051"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 1" aria-label="Delete Statement 1" data-statement-id="337520353986933637197236749525089030051" fdprocessedid="dkaa9r">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">CREATE TABLE Customer ( 
+    cust_id int primary key, 
+    name varchar2(25), 
+    addr varchar2(25), 
+    pho_no number(10) , 
+    email varchar2(25) not null 
+    )</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Table created.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+2</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement2" aria-label="Edit Statement 2" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520353986934846123056364154263736227\u0026cs=3erGKtgU8o2xWAquZuktfs8gf2n7mFsHVARNZCDbwKhx1SoycA4SFfzZkoijrfQshAJ7NB-WGadEy7dgMABl8xQ\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement2" aria-label="Run Statement 2" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520353986934846123056364154263736227"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 2" aria-label="Delete Statement 2" data-statement-id="337520353986934846123056364154263736227" fdprocessedid="tf4gc7">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">desc Customer</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">TABLE CUSTOMER<table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="Column_337520353986934846123056364154263736227">Column</th><th id="Null?_337520353986934846123056364154263736227">Null?</th><th id="Type_337520353986934846123056364154263736227">Type</th></tr><tr><td headers="Column_337520353986934846123056364154263736227">CUST_ID</td><td headers="Null?_337520353986934846123056364154263736227">NOT NULL</td><td headers="Type_337520353986934846123056364154263736227">NUMBER</td></tr><tr><td headers="Column_337520353986934846123056364154263736227">NAME</td><td headers="Null?_337520353986934846123056364154263736227"> - </td><td headers="Type_337520353986934846123056364154263736227">VARCHAR2(25)</td></tr><tr><td headers="Column_337520353986934846123056364154263736227">ADDR</td><td headers="Null?_337520353986934846123056364154263736227"> - </td><td headers="Type_337520353986934846123056364154263736227">VARCHAR2(25)</td></tr><tr><td headers="Column_337520353986934846123056364154263736227">PHO_NO</td><td headers="Null?_337520353986934846123056364154263736227"> - </td><td headers="Type_337520353986934846123056364154263736227">NUMBER(10,0)</td></tr><tr><td headers="Column_337520353986934846123056364154263736227">EMAIL</td><td headers="Null?_337520353986934846123056364154263736227">NOT NULL</td><td headers="Type_337520353986934846123056364154263736227">VARCHAR2(25)</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+3</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement3" aria-label="Edit Statement 3" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519512209952073362532491666066026057\u0026cs=3LtHIwxyja0Vt89Ap4IHYKqJ1gtTR3CvOfmmu0vk6Grkk8YALcvDjFCN_XeHP6I0dLhANhviPXzF9LoYKq-iUTw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement3" aria-label="Run Statement 3" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519512209952073362532491666066026057"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 3" aria-label="Delete Statement 3" data-statement-id="337519512209952073362532491666066026057" fdprocessedid="96ydc">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">CREATE TABLE Rooms ( 
+    room_id int primary key, 
+    room_no int, 
+    room_type varchar2(25), 
+    cap int, 
+    status varchar2(25), 
+    rate_per_night decimal(6, 2) 
+  )</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Table created.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+4</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement4" aria-label="Edit Statement 4" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519512209953282288352106295240732233\u0026cs=3PuKeTIi1bOq2nvT5xsklqcyUl2CNQMWGdsEMkAEnwjCkwosgUnx1UwdL0PkFL483HcpWrL1ysRzF73H44Z6AbQ\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement4" aria-label="Run Statement 4" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519512209953282288352106295240732233"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 4" aria-label="Delete Statement 4" data-statement-id="337519512209953282288352106295240732233" fdprocessedid="y7cpek">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">desc Rooms</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">TABLE ROOMS<table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="Column_337519512209953282288352106295240732233">Column</th><th id="Null?_337519512209953282288352106295240732233">Null?</th><th id="Type_337519512209953282288352106295240732233">Type</th></tr><tr><td headers="Column_337519512209953282288352106295240732233">ROOM_ID</td><td headers="Null?_337519512209953282288352106295240732233">NOT NULL</td><td headers="Type_337519512209953282288352106295240732233">NUMBER</td></tr><tr><td headers="Column_337519512209953282288352106295240732233">ROOM_NO</td><td headers="Null?_337519512209953282288352106295240732233"> - </td><td headers="Type_337519512209953282288352106295240732233">NUMBER</td></tr><tr><td headers="Column_337519512209953282288352106295240732233">ROOM_TYPE</td><td headers="Null?_337519512209953282288352106295240732233"> - </td><td headers="Type_337519512209953282288352106295240732233">VARCHAR2(25)</td></tr><tr><td headers="Column_337519512209953282288352106295240732233">CAP</td><td headers="Null?_337519512209953282288352106295240732233"> - </td><td headers="Type_337519512209953282288352106295240732233">NUMBER</td></tr><tr><td headers="Column_337519512209953282288352106295240732233">STATUS</td><td headers="Null?_337519512209953282288352106295240732233"> - </td><td headers="Type_337519512209953282288352106295240732233">VARCHAR2(25)</td></tr><tr><td headers="Column_337519512209953282288352106295240732233">RATE_PER_NIGHT</td><td headers="Null?_337519512209953282288352106295240732233"> - </td><td headers="Type_337519512209953282288352106295240732233">NUMBER(6,2)</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>6 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+5</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement5" aria-label="Edit Statement 5" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519428182983336221380461293308266977\u0026cs=3Mru49zrOyFxup5OWW4GxaWXrAuUCU-2Ez69ZM5sIT-gGI7jysfDQKD8R9d8EaWNJc424yqwpFk_5EfE5MeVKew\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement5" aria-label="Run Statement 5" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519428182983336221380461293308266977"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 5" aria-label="Delete Statement 5" data-statement-id="337519428182983336221380461293308266977" fdprocessedid="8ookha">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">create table Employees( 
+    emp_id int primary key, 
+    name varchar2(25), 
+    pos varchar2(25), 
+    dep varchar2(25), 
+    salary decimal(10, 2), 
+    hire_date date 
+)</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Table created.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+6</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement6" aria-label="Edit Statement 6" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519428182984545147200075922482973153\u0026cs=3Yquqe0heBffMfbQJq03mBvwuViUxiQDrIRD9F8e4he5zEUmH-4a9GG7zgCj7eb7KjB3IkTf80Rym1YM0ia1o-g\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement6" aria-label="Run Statement 6" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519428182984545147200075922482973153"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 6" aria-label="Delete Statement 6" data-statement-id="337519428182984545147200075922482973153" fdprocessedid="j14oze">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">desc Employees</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">TABLE EMPLOYEES<table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="Column_337519428182984545147200075922482973153">Column</th><th id="Null?_337519428182984545147200075922482973153">Null?</th><th id="Type_337519428182984545147200075922482973153">Type</th></tr><tr><td headers="Column_337519428182984545147200075922482973153">EMP_ID</td><td headers="Null?_337519428182984545147200075922482973153">NOT NULL</td><td headers="Type_337519428182984545147200075922482973153">NUMBER</td></tr><tr><td headers="Column_337519428182984545147200075922482973153">NAME</td><td headers="Null?_337519428182984545147200075922482973153"> - </td><td headers="Type_337519428182984545147200075922482973153">VARCHAR2(25)</td></tr><tr><td headers="Column_337519428182984545147200075922482973153">POS</td><td headers="Null?_337519428182984545147200075922482973153"> - </td><td headers="Type_337519428182984545147200075922482973153">VARCHAR2(25)</td></tr><tr><td headers="Column_337519428182984545147200075922482973153">DEP</td><td headers="Null?_337519428182984545147200075922482973153"> - </td><td headers="Type_337519428182984545147200075922482973153">VARCHAR2(25)</td></tr><tr><td headers="Column_337519428182984545147200075922482973153">SALARY</td><td headers="Null?_337519428182984545147200075922482973153"> - </td><td headers="Type_337519428182984545147200075922482973153">NUMBER(10,2)</td></tr><tr><td headers="Column_337519428182984545147200075922482973153">HIRE_DATE</td><td headers="Null?_337519428182984545147200075922482973153"> - </td><td headers="Type_337519428182984545147200075922482973153">DATE</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>6 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+7</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement7" aria-label="Edit Statement 7" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519512210008892876054379237277216329\u0026cs=3cjBWkgLC67HChwoFEQ8QvSC8jn1KG1t0fm-MaWsIvmEIrd99o1Gx1jM9Sb7fqbSClP8fPkidNzSGQkfQHW4aHw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement7" aria-label="Run Statement 7" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519512210008892876054379237277216329"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 7" aria-label="Delete Statement 7" data-statement-id="337519512210008892876054379237277216329" fdprocessedid="4y8z7r">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">Create table Hos_keeping ( 
+   hoskeeping_id integer primary key, 
+   emp_id number(20), 
+   task_date date, 
+   task_desp varchar2(50) 
+ )</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Table created.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+8</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement8" aria-label="Edit Statement 8" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519512210010101801873993866451922505\u0026cs=3yCmtsP1s7sbDe3pQajazUkqRg92wIGgJm23uNkxLmsTGux0mCPnnOrvbjwdF-iM07t78xZVUEdj4BLdixbZlqA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement8" aria-label="Run Statement 8" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519512210010101801873993866451922505"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 8" aria-label="Delete Statement 8" data-statement-id="337519512210010101801873993866451922505" fdprocessedid="c0t0j8">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">desc Hos_keeping</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">TABLE HOS_KEEPING<table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="Column_337519512210010101801873993866451922505">Column</th><th id="Null?_337519512210010101801873993866451922505">Null?</th><th id="Type_337519512210010101801873993866451922505">Type</th></tr><tr><td headers="Column_337519512210010101801873993866451922505">HOSKEEPING_ID</td><td headers="Null?_337519512210010101801873993866451922505">NOT NULL</td><td headers="Type_337519512210010101801873993866451922505">NUMBER</td></tr><tr><td headers="Column_337519512210010101801873993866451922505">EMP_ID</td><td headers="Null?_337519512210010101801873993866451922505"> - </td><td headers="Type_337519512210010101801873993866451922505">NUMBER(20,0)</td></tr><tr><td headers="Column_337519512210010101801873993866451922505">TASK_DATE</td><td headers="Null?_337519512210010101801873993866451922505"> - </td><td headers="Type_337519512210010101801873993866451922505">DATE</td></tr><tr><td headers="Column_337519512210010101801873993866451922505">TASK_DESP</td><td headers="Null?_337519512210010101801873993866451922505"> - </td><td headers="Type_337519512210010101801873993866451922505">VARCHAR2(50)</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>4 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+9</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement9" aria-label="Edit Statement 9" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519512210048787428101662000042520137\u0026cs=33DePh9FDbthjLiR51Ofm1BWia4fG6dW6srEBPi7zlTw9lTsJ-p-qQ20O2GfGDRqLtCrOcx2ADybC7oLtb4ShhA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement9" aria-label="Run Statement 9" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519512210048787428101662000042520137"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 9" aria-label="Delete Statement 9" data-statement-id="337519512210048787428101662000042520137" fdprocessedid="jqmzd9">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">create table Reservations( 
+   reser_id integer primary key, 
+   cust_id int, 
+   room_id int, 
+   check_in_date date, 
+   check_out_date date, 
+   foreign key(cust_id) references Customer(cust_id), 
+   foreign key(room_id) references Rooms(room_id) 
+   )</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Table created.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+10</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement10" aria-label="Edit Statement 10" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519512210049996353921276629217226313\u0026cs=37IMWqpWpB8VVbfOm6WAw2YayFtv0xdnT8yfGmcSYNzkkqo12YAiBW4GAmPb46IaBgV2DVRoYjVRZGjjtWpDx8w\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement10" aria-label="Run Statement 10" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519512210049996353921276629217226313"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 10" aria-label="Delete Statement 10" data-statement-id="337519512210049996353921276629217226313" fdprocessedid="31eph">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">desc Reservations</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">TABLE RESERVATIONS<table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="Column_337519512210049996353921276629217226313">Column</th><th id="Null?_337519512210049996353921276629217226313">Null?</th><th id="Type_337519512210049996353921276629217226313">Type</th></tr><tr><td headers="Column_337519512210049996353921276629217226313">RESER_ID</td><td headers="Null?_337519512210049996353921276629217226313">NOT NULL</td><td headers="Type_337519512210049996353921276629217226313">NUMBER</td></tr><tr><td headers="Column_337519512210049996353921276629217226313">CUST_ID</td><td headers="Null?_337519512210049996353921276629217226313"> - </td><td headers="Type_337519512210049996353921276629217226313">NUMBER</td></tr><tr><td headers="Column_337519512210049996353921276629217226313">ROOM_ID</td><td headers="Null?_337519512210049996353921276629217226313"> - </td><td headers="Type_337519512210049996353921276629217226313">NUMBER</td></tr><tr><td headers="Column_337519512210049996353921276629217226313">CHECK_IN_DATE</td><td headers="Null?_337519512210049996353921276629217226313"> - </td><td headers="Type_337519512210049996353921276629217226313">DATE</td></tr><tr><td headers="Column_337519512210049996353921276629217226313">CHECK_OUT_DATE</td><td headers="Null?_337519512210049996353921276629217226313"> - </td><td headers="Type_337519512210049996353921276629217226313">DATE</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+11</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement11" aria-label="Edit Statement 11" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663307629706304503718883653930\u0026cs=3jjKLumY236k33PtWgZl-64TusGx1YvHIPK2REPfCCN7AVhEyT0KtbqkGtjaszQQ77AtCSS3s0REAY_7X1X8l9Q\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement11" aria-label="Run Statement 11" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663307629706304503718883653930"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 11" aria-label="Delete Statement 11" data-statement-id="337520461663307629706304503718883653930" fdprocessedid="zajp17">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql"> create table Booking( 
+    booking_id number(3) constraint booking_pk primary key, 
+    room_id number(3), 
+    cust_id number(4), 
+    bookingDate date NOT NULL, 
+    checkin date, 
+    checkout date, 
+    foreign key(room_id) references Rooms(room_id), 
+    foreign key(cust_id) references Customer(cust_id) 
+   )</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Table created.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+12</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement12" aria-label="Edit Statement 12" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663308838632124118348058360106\u0026cs=3u4nrhzTrqs86PNMTnI0oyO988ZCsVa2N0pDo0PMCDdGbyR3IUqpHxAcC5XUnAXd7cHQLXe8TyAeqrVMxQadaxA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement12" aria-label="Run Statement 12" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663308838632124118348058360106"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 12" aria-label="Delete Statement 12" data-statement-id="337520461663308838632124118348058360106" fdprocessedid="zb5djt">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">desc Booking</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">TABLE BOOKING<table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="Column_337520461663308838632124118348058360106">Column</th><th id="Null?_337520461663308838632124118348058360106">Null?</th><th id="Type_337520461663308838632124118348058360106">Type</th></tr><tr><td headers="Column_337520461663308838632124118348058360106">BOOKING_ID</td><td headers="Null?_337520461663308838632124118348058360106">NOT NULL</td><td headers="Type_337520461663308838632124118348058360106">NUMBER(3,0)</td></tr><tr><td headers="Column_337520461663308838632124118348058360106">ROOM_ID</td><td headers="Null?_337520461663308838632124118348058360106"> - </td><td headers="Type_337520461663308838632124118348058360106">NUMBER(3,0)</td></tr><tr><td headers="Column_337520461663308838632124118348058360106">CUST_ID</td><td headers="Null?_337520461663308838632124118348058360106"> - </td><td headers="Type_337520461663308838632124118348058360106">NUMBER(4,0)</td></tr><tr><td headers="Column_337520461663308838632124118348058360106">BOOKINGDATE</td><td headers="Null?_337520461663308838632124118348058360106">NOT NULL</td><td headers="Type_337520461663308838632124118348058360106">DATE</td></tr><tr><td headers="Column_337520461663308838632124118348058360106">CHECKIN</td><td headers="Null?_337520461663308838632124118348058360106"> - </td><td headers="Type_337520461663308838632124118348058360106">DATE</td></tr><tr><td headers="Column_337520461663308838632124118348058360106">CHECKOUT</td><td headers="Null?_337520461663308838632124118348058360106"> - </td><td headers="Type_337520461663308838632124118348058360106">DATE</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>6 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+13</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement13" aria-label="Edit Statement 13" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713175633283729032780051428281\u0026cs=3RL-Sym2ekzgWWzU_RVtdDiWac2FJvuormEqSJJ8kk-Tnz0_ZMtOGe7Qj_i1zcqHY4rQe4yy5zMSpYnF62-A3xA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement13" aria-label="Run Statement 13" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713175633283729032780051428281"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 13" aria-label="Delete Statement 13" data-statement-id="337520538713175633283729032780051428281" fdprocessedid="kl5le5">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql"> INSERT INTO Customer VALUES (1, 'Surekha', '143 Main Street', '1234567890', 'surekha@gmail.com')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+14</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement14" aria-label="Edit Statement 14" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713176842209548647409226134457\u0026cs=3BzdQBMihhQsei7G9HFSqDSoYwhnHRVQwJi7hAYLnjyjv-h9-SAT84K6B1utx0QzrvCGP1mUvVaQoSF3fhYvpWA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement14" aria-label="Run Statement 14" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713176842209548647409226134457"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 14" aria-label="Delete Statement 14" data-statement-id="337520538713176842209548647409226134457" fdprocessedid="brl0qh">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Customer VALUES (3, 'Pravallika', 'nellore', '9900887766', 'pravallika@gmail.com')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+15</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement15" aria-label="Edit Statement 15" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713178051135368262038400840633\u0026cs=3h53cGiXSJVV3zt9B8KCRmUWMF_Y-AX3yiU0zAHzJdRpSxhezIzQu4uRfrwTuG4Du2cl_J4Kn39NW4k9UeM2XJg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement15" aria-label="Run Statement 15" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713178051135368262038400840633"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 15" aria-label="Delete Statement 15" data-statement-id="337520538713178051135368262038400840633" fdprocessedid="si1qs">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Customer VALUES (4, 'Rani', 'bagalur', '6677889901', 'rani@gmail.com')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+16</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement16" aria-label="Edit Statement 16" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713179260061187876667575546809\u0026cs=3r7GcurT9WLkzLCfam7ukgpdrn01oFo6A-nsgGSdoVjx5kg8NnJlwVnxT1zTxOpDO7NJ7j3ZpwxC0aOL3ktfn5Q\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement16" aria-label="Run Statement 16" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713179260061187876667575546809"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 16" aria-label="Delete Statement 16" data-statement-id="337520538713179260061187876667575546809" fdprocessedid="jt26k3">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Customer VALUES (5, 'Vaishu', 'chittor','8899665541', 'vaishu@gmail.com')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+17</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement17" aria-label="Edit Statement 17" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713180468987007491296750252985\u0026cs=3zvCF2COSQ1wh-YD7cvRJMjtutRkjg1HBo8goUMfHJYz01mOsn_gIfbrISs6Wsu8OIUTW03W-O0I4DgbhvvxGaA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement17" aria-label="Run Statement 17" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713180468987007491296750252985"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 17" aria-label="Delete Statement 17" data-statement-id="337520538713180468987007491296750252985" fdprocessedid="wp872o">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Customer VALUES (2, 'Dhanu', 'guntur', '3457838798', 'Dhanu@gmail.com')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+18</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement18" aria-label="Edit Statement 18" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713181677912827105925924959161\u0026cs=337khH-Z-Sk58Rsp-60fogJiQVkQdt-o_TU6BHIovWLo7GJZq4gKgVgS_v1FjrHLBC-jRopIBz9r9FY7BZKlYUw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement18" aria-label="Run Statement 18" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713181677912827105925924959161"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 18" aria-label="Delete Statement 18" data-statement-id="337520538713181677912827105925924959161" fdprocessedid="3irhne">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  select *from Customer</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="CUST_ID_337520538713181677912827105925924959161">CUST_ID</th><th id="NAME_337520538713181677912827105925924959161">NAME</th><th id="ADDR_337520538713181677912827105925924959161">ADDR</th><th id="PHO_NO_337520538713181677912827105925924959161">PHO_NO</th><th id="EMAIL_337520538713181677912827105925924959161">EMAIL</th></tr><tr><td headers="CUST_ID_337520538713181677912827105925924959161">1</td><td headers="NAME_337520538713181677912827105925924959161">Surekha</td><td headers="ADDR_337520538713181677912827105925924959161">143 Main Street</td><td headers="PHO_NO_337520538713181677912827105925924959161">1234567890</td><td headers="EMAIL_337520538713181677912827105925924959161">surekha@gmail.com</td></tr><tr><td headers="CUST_ID_337520538713181677912827105925924959161">3</td><td headers="NAME_337520538713181677912827105925924959161">Pravallika</td><td headers="ADDR_337520538713181677912827105925924959161">nellore</td><td headers="PHO_NO_337520538713181677912827105925924959161">9900887766</td><td headers="EMAIL_337520538713181677912827105925924959161">pravallika@gmail.com</td></tr><tr><td headers="CUST_ID_337520538713181677912827105925924959161">4</td><td headers="NAME_337520538713181677912827105925924959161">Rani</td><td headers="ADDR_337520538713181677912827105925924959161">bagalur</td><td headers="PHO_NO_337520538713181677912827105925924959161">6677889901</td><td headers="EMAIL_337520538713181677912827105925924959161">rani@gmail.com</td></tr><tr><td headers="CUST_ID_337520538713181677912827105925924959161">5</td><td headers="NAME_337520538713181677912827105925924959161">Vaishu</td><td headers="ADDR_337520538713181677912827105925924959161">chittor</td><td headers="PHO_NO_337520538713181677912827105925924959161">8899665541</td><td headers="EMAIL_337520538713181677912827105925924959161">vaishu@gmail.com</td></tr><tr><td headers="CUST_ID_337520538713181677912827105925924959161">2</td><td headers="NAME_337520538713181677912827105925924959161">Dhanu</td><td headers="ADDR_337520538713181677912827105925924959161">guntur</td><td headers="PHO_NO_337520538713181677912827105925924959161">3457838798</td><td headers="EMAIL_337520538713181677912827105925924959161">Dhanu@gmail.com</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+19</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement19" aria-label="Edit Statement 19" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663434566917364039782227802410\u0026cs=3HHLtWKCSxZBYTAl4cz1OfZWtR4bcsOvjvtXW1BTXkep0mQL3ko0rwEHEyxRIPJFR0qfxxWW5XJkOym95Lg7MZg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement19" aria-label="Run Statement 19" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663434566917364039782227802410"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 19" aria-label="Delete Statement 19" data-statement-id="337520461663434566917364039782227802410" fdprocessedid="wq57hq">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">INSERT INTO Rooms (room_id, room_no, room_type, status, rate_per_night) VALUES (1, 101,     'Standard', 'available', 1000.00)</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+20</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement20" aria-label="Edit Statement 20" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663435775843183654411402508586\u0026cs=36JlF6XMWdYQ5ZdpviA4rOpcaiBmoTU_54LW_AsrYe6qD1b4_lUI4mMP2mdl4nDJkuwD0qEDWpSprWzLAPBBcZw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement20" aria-label="Run Statement 20" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663435775843183654411402508586"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 20" aria-label="Delete Statement 20" data-statement-id="337520461663435775843183654411402508586" fdprocessedid="bv5qsa">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Rooms (room_id, room_no, room_type, status, rate_per_night) VALUES (2, 102, 'Good', 'vacant', 2000.00)</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+21</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement21" aria-label="Edit Statement 21" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663436984769003269040577214762\u0026cs=3jz47QwxIeyliZT3F7h-sQ9T8AjKmyPkrSHyGxnNS9LVLPD0FIEn0vpFC4rkZDeCuTeyLTiCA7hKWFAI-Apd9Tw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement21" aria-label="Run Statement 21" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663436984769003269040577214762"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 21" aria-label="Delete Statement 21" data-statement-id="337520461663436984769003269040577214762" fdprocessedid="e6t855">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Rooms (room_id, room_no, room_type, status, rate_per_night) VALUES (3, 103, 'standard', 'full', 1500.00)</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+22</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement22" aria-label="Edit Statement 22" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663438193694822883669751920938\u0026cs=3hler8Vcmm1gGhF65AgNzPNTtNHFZj4oG0q2-nxVlmtNLCGmcdgLLjBzUoX-Lril9UULteqAcvM6ttif51CQQ9Q\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement22" aria-label="Run Statement 22" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663438193694822883669751920938"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 22" aria-label="Delete Statement 22" data-statement-id="337520461663438193694822883669751920938" fdprocessedid="3rylyp">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Rooms (room_id, room_no, room_type, status, rate_per_night) VALUES (4, 104, 'Not bad', 'available', 1000.00)</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+23</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement23" aria-label="Edit Statement 23" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663439402620642498298926627114\u0026cs=3GBWtA8ELvDVNeBO1mqfxti6rr7h5DcnsQSZizM_YtccE1G0Q9VjNOIHwACZpfbguYy7YlEsGJeA-PoKk346JcQ\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement23" aria-label="Run Statement 23" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663439402620642498298926627114"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 23" aria-label="Delete Statement 23" data-statement-id="337520461663439402620642498298926627114" fdprocessedid="s2ii1m">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  INSERT INTO Rooms (room_id, room_no, room_type, status, rate_per_night) VALUES (5, 105, 'Normal', 'vacant', 500.00)</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+24</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement24" aria-label="Edit Statement 24" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520461663440611546462112928101333290\u0026cs=3Op5inkkbLXUOXhYnXCRU3Gk133SEs_6tR0uyaHTc398scn_589cr1uwyf9VEzFkjSIR0_vBUlYLIsBkGagQkuw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement24" aria-label="Run Statement 24" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520461663440611546462112928101333290"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 24" aria-label="Delete Statement 24" data-statement-id="337520461663440611546462112928101333290" fdprocessedid="85g3eu">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  select *from Rooms</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="ROOM_ID_337520461663440611546462112928101333290">ROOM_ID</th><th id="ROOM_NO_337520461663440611546462112928101333290">ROOM_NO</th><th id="ROOM_TYPE_337520461663440611546462112928101333290">ROOM_TYPE</th><th id="CAP_337520461663440611546462112928101333290">CAP</th><th id="STATUS_337520461663440611546462112928101333290">STATUS</th><th id="RATE_PER_NIGHT_337520461663440611546462112928101333290">RATE_PER_NIGHT</th></tr><tr><td headers="ROOM_ID_337520461663440611546462112928101333290">1</td><td headers="ROOM_NO_337520461663440611546462112928101333290">101</td><td headers="ROOM_TYPE_337520461663440611546462112928101333290">Standard</td><td headers="CAP_337520461663440611546462112928101333290"> - </td><td headers="STATUS_337520461663440611546462112928101333290">available</td><td headers="RATE_PER_NIGHT_337520461663440611546462112928101333290">1000</td></tr><tr><td headers="ROOM_ID_337520461663440611546462112928101333290">2</td><td headers="ROOM_NO_337520461663440611546462112928101333290">102</td><td headers="ROOM_TYPE_337520461663440611546462112928101333290">Good</td><td headers="CAP_337520461663440611546462112928101333290"> - </td><td headers="STATUS_337520461663440611546462112928101333290">vacant</td><td headers="RATE_PER_NIGHT_337520461663440611546462112928101333290">2000</td></tr><tr><td headers="ROOM_ID_337520461663440611546462112928101333290">3</td><td headers="ROOM_NO_337520461663440611546462112928101333290">103</td><td headers="ROOM_TYPE_337520461663440611546462112928101333290">standard</td><td headers="CAP_337520461663440611546462112928101333290"> - </td><td headers="STATUS_337520461663440611546462112928101333290">full</td><td headers="RATE_PER_NIGHT_337520461663440611546462112928101333290">1500</td></tr><tr><td headers="ROOM_ID_337520461663440611546462112928101333290">4</td><td headers="ROOM_NO_337520461663440611546462112928101333290">104</td><td headers="ROOM_TYPE_337520461663440611546462112928101333290">Not bad</td><td headers="CAP_337520461663440611546462112928101333290"> - </td><td headers="STATUS_337520461663440611546462112928101333290">available</td><td headers="RATE_PER_NIGHT_337520461663440611546462112928101333290">1000</td></tr><tr><td headers="ROOM_ID_337520461663440611546462112928101333290">5</td><td headers="ROOM_NO_337520461663440611546462112928101333290">105</td><td headers="ROOM_TYPE_337520461663440611546462112928101333290">Normal</td><td headers="CAP_337520461663440611546462112928101333290"> - </td><td headers="STATUS_337520461663440611546462112928101333290">vacant</td><td headers="RATE_PER_NIGHT_337520461663440611546462112928101333290">500</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+25</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement25" aria-label="Edit Statement 25" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519428183011141515231597764326509025\u0026cs=3-QUb0lTR-3dHi9jqvCNIONoz-cVkI6YVrpQJlBZkNLr-L6IHg712-GC2TVVHek6Ch2RhrC8dig2KDp_-aKVqMg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement25" aria-label="Run Statement 25" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519428183011141515231597764326509025"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 25" aria-label="Delete Statement 25" data-statement-id="337519428183011141515231597764326509025" fdprocessedid="uomw7y">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql"> declare  
+       i integer; 
+  begin 
+ 
+         INSERT INTO Employees VALUES (1, 'Aniket', 'Manager', 'Finance', 5000.00, TO_DATE('2022-  01-01', 'YYYY-MM-DD')); 
+ 
+         INSERT INTO Employees VALUES (2, 'sukanti', 'cleaner', 'laber', 10000.00, TO_DATE('2023-10-15', 'YYYY-MM-DD')); 
+ 
+         INSERT INTO Employees VALUES (3, 'Akshay', 'accountant', 'clerk', 15000.00, TO_DATE('2022-04-06', 'YYYY-MM-DD')); 
+ 
+         INSERT INTO Employees VALUES (4, 'Anand', 'supplier', 'Food', 7000.00, TO_DATE('2024-05-15', 'YYYY-MM-DD')); 
+ 
+        INSERT INTO Employees VALUES (5, 'Ani', 'asst Manager', 'Food', 10000.00, TO_DATE('2023-12-09', 'YYYY-MM-DD')); 
+  dbms_output.put_line('Record inserted'); 
+  end; </code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Statement processed.<br>Record inserted<br></pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+26</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement26" aria-label="Edit Statement 26" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337519428183013559366870827022675921377\u0026cs=3kEpnsKco8MTE7TMI-UZeITAwjFwSzqJXBx5mQlpG0AX9GXBnMzgaWY2N99Hd_2HF6gPfo3JJx1n-KF4_8RA5QQ\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement26" aria-label="Run Statement 26" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337519428183013559366870827022675921377"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 26" aria-label="Delete Statement 26" data-statement-id="337519428183013559366870827022675921377" fdprocessedid="ooccd7">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  select *from Employees</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="EMP_ID_337519428183013559366870827022675921377">EMP_ID</th><th id="NAME_337519428183013559366870827022675921377">NAME</th><th id="POS_337519428183013559366870827022675921377">POS</th><th id="DEP_337519428183013559366870827022675921377">DEP</th><th id="SALARY_337519428183013559366870827022675921377">SALARY</th><th id="HIRE_DATE_337519428183013559366870827022675921377">HIRE_DATE</th></tr><tr><td headers="EMP_ID_337519428183013559366870827022675921377">1</td><td headers="NAME_337519428183013559366870827022675921377">Aniket</td><td headers="POS_337519428183013559366870827022675921377">Manager</td><td headers="DEP_337519428183013559366870827022675921377">Finance</td><td headers="SALARY_337519428183013559366870827022675921377">5000</td><td headers="HIRE_DATE_337519428183013559366870827022675921377">01-JAN-22</td></tr><tr><td headers="EMP_ID_337519428183013559366870827022675921377">2</td><td headers="NAME_337519428183013559366870827022675921377">sukanti</td><td headers="POS_337519428183013559366870827022675921377">cleaner</td><td headers="DEP_337519428183013559366870827022675921377">laber</td><td headers="SALARY_337519428183013559366870827022675921377">10000</td><td headers="HIRE_DATE_337519428183013559366870827022675921377">15-OCT-23</td></tr><tr><td headers="EMP_ID_337519428183013559366870827022675921377">3</td><td headers="NAME_337519428183013559366870827022675921377">Akshay</td><td headers="POS_337519428183013559366870827022675921377">accountant</td><td headers="DEP_337519428183013559366870827022675921377">clerk</td><td headers="SALARY_337519428183013559366870827022675921377">15000</td><td headers="HIRE_DATE_337519428183013559366870827022675921377">06-APR-22</td></tr><tr><td headers="EMP_ID_337519428183013559366870827022675921377">4</td><td headers="NAME_337519428183013559366870827022675921377">Anand</td><td headers="POS_337519428183013559366870827022675921377">supplier</td><td headers="DEP_337519428183013559366870827022675921377">Food</td><td headers="SALARY_337519428183013559366870827022675921377">7000</td><td headers="HIRE_DATE_337519428183013559366870827022675921377">15-MAY-24</td></tr><tr><td headers="EMP_ID_337519428183013559366870827022675921377">5</td><td headers="NAME_337519428183013559366870827022675921377">Ani</td><td headers="POS_337519428183013559366870827022675921377">asst Manager</td><td headers="DEP_337519428183013559366870827022675921377">Food</td><td headers="SALARY_337519428183013559366870827022675921377">10000</td><td headers="HIRE_DATE_337519428183013559366870827022675921377">09-DEC-23</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+27</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement27" aria-label="Edit Statement 27" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713356972156671227156257354681\u0026cs=32-gSeOwAO5UVLGgeT9nSjGaY3kPWbCpdBwzfDZSq2ji5OzDf4BzMQcYRCqjlNVU5jHuD4qFxIlrM9bkYEQymJw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement27" aria-label="Run Statement 27" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713356972156671227156257354681"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 27" aria-label="Delete Statement 27" data-statement-id="337520538713356972156671227156257354681" fdprocessedid="k3jdyi">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql"> declare  
+    i integer; 
+  begin 
+      
+      INSERT INTO Hos_keeping VALUES(2001, 1, TO_DATE('2022-02-15', 'YYYY-MM-DD'), 'maintainance'); 
+      INSERT INTO Hos_keeping VALUES(2002, 2, TO_DATE('2023-12-10', 'YYYY-MM-DD'), 'brooming'); 
+      INSERT INTO Hos_keeping VALUES(2003, 3, TO_DATE('2022-05-05', 'YYYY-MM-DD'), 'finance'); 
+      INSERT INTO Hos_keeping VALUES(2004, 4, TO_DATE('2024-06-25', 'YYYY-MM-DD'), 'cleaning'); 
+      INSERT INTO Hos_keeping VALUES(2005, 5, TO_DATE('2023-12-20', 'YYYY-MM-DD'), 'chinies'); 
+  dbms_output.put_line('Record inserted'); 
+  end; </code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Statement processed.<br>Record inserted<br></pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+28</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement28" aria-label="Edit Statement 28" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520538713359390008310456414606767033\u0026cs=3APHaj0PZy_TiWQrdAPpLPEEn4N8DA0g_spWB0skSUXs0a5P2wWy3Jkq0Ztr_D6cQ3-esRN35Wh6ATHzMLCa6Sw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement28" aria-label="Run Statement 28" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520538713359390008310456414606767033"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 28" aria-label="Delete Statement 28" data-statement-id="337520538713359390008310456414606767033" fdprocessedid="1aqsb">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">  select *from Hos_keeping</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="HOSKEEPING_ID_337520538713359390008310456414606767033">HOSKEEPING_ID</th><th id="EMP_ID_337520538713359390008310456414606767033">EMP_ID</th><th id="TASK_DATE_337520538713359390008310456414606767033">TASK_DATE</th><th id="TASK_DESP_337520538713359390008310456414606767033">TASK_DESP</th></tr><tr><td headers="HOSKEEPING_ID_337520538713359390008310456414606767033">2001</td><td headers="EMP_ID_337520538713359390008310456414606767033">1</td><td headers="TASK_DATE_337520538713359390008310456414606767033">15-FEB-22</td><td headers="TASK_DESP_337520538713359390008310456414606767033">maintainance</td></tr><tr><td headers="HOSKEEPING_ID_337520538713359390008310456414606767033">2002</td><td headers="EMP_ID_337520538713359390008310456414606767033">2</td><td headers="TASK_DATE_337520538713359390008310456414606767033">10-DEC-23</td><td headers="TASK_DESP_337520538713359390008310456414606767033">brooming</td></tr><tr><td headers="HOSKEEPING_ID_337520538713359390008310456414606767033">2003</td><td headers="EMP_ID_337520538713359390008310456414606767033">3</td><td headers="TASK_DATE_337520538713359390008310456414606767033">05-MAY-22</td><td headers="TASK_DESP_337520538713359390008310456414606767033">finance</td></tr><tr><td headers="HOSKEEPING_ID_337520538713359390008310456414606767033">2004</td><td headers="EMP_ID_337520538713359390008310456414606767033">4</td><td headers="TASK_DATE_337520538713359390008310456414606767033">25-JUN-24</td><td headers="TASK_DESP_337520538713359390008310456414606767033">cleaning</td></tr><tr><td headers="HOSKEEPING_ID_337520538713359390008310456414606767033">2005</td><td headers="EMP_ID_337520538713359390008310456414606767033">5</td><td headers="TASK_DATE_337520538713359390008310456414606767033">20-DEC-23</td><td headers="TASK_DESP_337520538713359390008310456414606767033">chinies</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+29</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement29" aria-label="Edit Statement 29" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405177576146134331330702394341\u0026cs=3NwpfdcEvjAkEadDLTnGUfEziJmtjl_93tk1APs1BHOFc30oYjsDFyJ0-NBVA0nw64v4P0mmI2FETuOlEsxl3WQ\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement29" aria-label="Run Statement 29" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405177576146134331330702394341"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 29" aria-label="Delete Statement 29" data-statement-id="337520627405177576146134331330702394341" fdprocessedid="sjbkxc">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql"> declare  
+    i integer; 
+  begin 
+INSERT INTO Reservations(reser_id,cust_id,room_id,check_in_date,check_out_date)VALUES(11,1,1,TO_DATE('2023-06-1','YYYY-MM-   DD'),TO_DATE('2023-06-3','YYYY-MM-DD')); 
+ 
+INSERT INTO Reservations(reser_id,cust_id,room_id,check_in_date,check_out_date)VALUES(22,2,2,TO_DATE('2023-06-4','YYYY-MM-DD'),TO_DATE('2023-06-6','YYYY-MM-DD')); 
+  
+INSERT INTO Reservations(reser_id,cust_id,room_id,check_in_date,check_out_date)VALUES(33,3,3,TO_DATE('2023-06-8','YYYY-MM-DD'),TO_DATE('2023-06-10','YYYY-MM-DD')); 
+ 
+INSERT INTO Reservations(reser_id,cust_id,room_id,check_in_date,check_out_date)VALUES(44,4,4,TO_DATE('2023-06-11','YYYY-MM-DD'),TO_DATE('2023-06-14','YYYY-MM-DD')); 
+  
+INSERT INTO Reservations(reser_id,cust_id,room_id,check_in_date,check_out_date)VALUES(55,5,5,TO_DATE('2023-06-15','YYYY-MM-DD'),TO_DATE('2023-06-18','YYYY-MM-DD')); 
+dbms_output.put_line('Record inserted'); 
+end; </code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Statement processed.<br>Record inserted<br></pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+30</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement30" aria-label="Edit Statement 30" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405178785071953945959877100517\u0026cs=3Qk2zNmHnt8UtOKEMwoeoYuAX8D9Ce9DhWeaJHxJuUuhFmMxMlUWRdA9XqkERpXs509kBaiTE2Q3_VEVmDBxKkw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement30" aria-label="Run Statement 30" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405178785071953945959877100517"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 30" aria-label="Delete Statement 30" data-statement-id="337520627405178785071953945959877100517" fdprocessedid="733qjv">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select *from Reservations</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="RESER_ID_337520627405178785071953945959877100517">RESER_ID</th><th id="CUST_ID_337520627405178785071953945959877100517">CUST_ID</th><th id="ROOM_ID_337520627405178785071953945959877100517">ROOM_ID</th><th id="CHECK_IN_DATE_337520627405178785071953945959877100517">CHECK_IN_DATE</th><th id="CHECK_OUT_DATE_337520627405178785071953945959877100517">CHECK_OUT_DATE</th></tr><tr><td headers="RESER_ID_337520627405178785071953945959877100517">11</td><td headers="CUST_ID_337520627405178785071953945959877100517">1</td><td headers="ROOM_ID_337520627405178785071953945959877100517">1</td><td headers="CHECK_IN_DATE_337520627405178785071953945959877100517">01-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405178785071953945959877100517">03-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405178785071953945959877100517">22</td><td headers="CUST_ID_337520627405178785071953945959877100517">2</td><td headers="ROOM_ID_337520627405178785071953945959877100517">2</td><td headers="CHECK_IN_DATE_337520627405178785071953945959877100517">04-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405178785071953945959877100517">06-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405178785071953945959877100517">33</td><td headers="CUST_ID_337520627405178785071953945959877100517">3</td><td headers="ROOM_ID_337520627405178785071953945959877100517">3</td><td headers="CHECK_IN_DATE_337520627405178785071953945959877100517">08-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405178785071953945959877100517">10-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405178785071953945959877100517">44</td><td headers="CUST_ID_337520627405178785071953945959877100517">4</td><td headers="ROOM_ID_337520627405178785071953945959877100517">4</td><td headers="CHECK_IN_DATE_337520627405178785071953945959877100517">11-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405178785071953945959877100517">14-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405178785071953945959877100517">55</td><td headers="CUST_ID_337520627405178785071953945959877100517">5</td><td headers="ROOM_ID_337520627405178785071953945959877100517">5</td><td headers="CHECK_IN_DATE_337520627405178785071953945959877100517">15-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405178785071953945959877100517">18-JUN-23</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+31</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement31" aria-label="Edit Statement 31" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480540879960207742461095758280\u0026cs=3RSWxyVS6ECjuNV5v4CFBsLxPEY-FrMPzcf7RtgnGbdVzeQYhvyWWIUEBuQXmQt5Na0pA9b4nmHGA4FbdogApOg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement31" aria-label="Run Statement 31" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480540879960207742461095758280"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 31" aria-label="Delete Statement 31" data-statement-id="337520536480540879960207742461095758280" fdprocessedid="qexqrp">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">insert into Booking values(501,2,5,'15-jan-2022','16-jan-2022','18-jan-2022')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+32</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement32" aria-label="Edit Statement 32" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480542088886027357090270464456\u0026cs=3Z69QS-lcrVLZq37dqOxVUZw-wGIf0a-4XbsAGa4dYVYtpvnbflkTFGOsfSPK3vjdMx3rlj9v6VcsqntAha56MA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement32" aria-label="Run Statement 32" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480542088886027357090270464456"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 32" aria-label="Delete Statement 32" data-statement-id="337520536480542088886027357090270464456" fdprocessedid="jvlgqq">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">insert into Booking values(502,4,2,'12-may-2001','24-may-2001','27-may-2001')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+33</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement33" aria-label="Edit Statement 33" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480543297811846971719445170632\u0026cs=3az4WnWnu9Y25Fz3azoTWNzxxCu1jjiZ_YGMj54kZssZWpmHejI1R83a7ieDmAf9rap2CT2h2EpYI1rxu8rGnaA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement33" aria-label="Run Statement 33" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480543297811846971719445170632"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 33" aria-label="Delete Statement 33" data-statement-id="337520536480543297811846971719445170632" fdprocessedid="ntl2fl">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">insert into Booking values(503,3,3,'29-mar-2023','30-mar-2023','31-mar-2023')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+34</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement34" aria-label="Edit Statement 34" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480544506737666586348619876808\u0026cs=3Ch9O0-4FhQ3EeCZgja3jZDxhB-7CPNiq-EuOXc4C6pKyF4uwfkzl3FYXRKIlrqm55PhUoTMvP8tDDBcBTSMqiQ\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement34" aria-label="Run Statement 34" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480544506737666586348619876808"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 34" aria-label="Delete Statement 34" data-statement-id="337520536480544506737666586348619876808" fdprocessedid="r4h89">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">insert into Booking values(504,1,1,'05-jan-2006','06-jan-2006','08-jan-2006')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+35</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement35" aria-label="Edit Statement 35" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480545715663486200977794582984\u0026cs=3IIo61hEW2Je-B5kbPnFNAqa-nOqu0H-gLbpTO2b1KjFN4ehjRUc1mBmdkZBvCFgkd7oaxS9Ym_3oFdyYoPz5EA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement35" aria-label="Run Statement 35" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480545715663486200977794582984"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 35" aria-label="Delete Statement 35" data-statement-id="337520536480545715663486200977794582984" fdprocessedid="4gl9aw">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">insert into Booking values(505,5,4,'17-jun-2010','20-jun-2010','21-jun-2010')</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) inserted.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+36</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement36" aria-label="Edit Statement 36" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480546924589305815606969289160\u0026cs=3YI4aG2NqtHRuQqVWW0cNULI_faKGS8sISFMP6nJ-Myh1TimER4qXFsZ_PhtdllQH_nTT1OuXhA4hVcR-XOhVjg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement36" aria-label="Run Statement 36" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480546924589305815606969289160"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 36" aria-label="Delete Statement 36" data-statement-id="337520536480546924589305815606969289160" fdprocessedid="7yb0ks">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select *from Booking</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="BOOKING_ID_337520536480546924589305815606969289160">BOOKING_ID</th><th id="ROOM_ID_337520536480546924589305815606969289160">ROOM_ID</th><th id="CUST_ID_337520536480546924589305815606969289160">CUST_ID</th><th id="BOOKINGDATE_337520536480546924589305815606969289160">BOOKINGDATE</th><th id="CHECKIN_337520536480546924589305815606969289160">CHECKIN</th><th id="CHECKOUT_337520536480546924589305815606969289160">CHECKOUT</th></tr><tr><td headers="BOOKING_ID_337520536480546924589305815606969289160">501</td><td headers="ROOM_ID_337520536480546924589305815606969289160">2</td><td headers="CUST_ID_337520536480546924589305815606969289160">5</td><td headers="BOOKINGDATE_337520536480546924589305815606969289160">15-JAN-22</td><td headers="CHECKIN_337520536480546924589305815606969289160">16-JAN-22</td><td headers="CHECKOUT_337520536480546924589305815606969289160">18-JAN-22</td></tr><tr><td headers="BOOKING_ID_337520536480546924589305815606969289160">502</td><td headers="ROOM_ID_337520536480546924589305815606969289160">4</td><td headers="CUST_ID_337520536480546924589305815606969289160">2</td><td headers="BOOKINGDATE_337520536480546924589305815606969289160">12-MAY-01</td><td headers="CHECKIN_337520536480546924589305815606969289160">24-MAY-01</td><td headers="CHECKOUT_337520536480546924589305815606969289160">27-MAY-01</td></tr><tr><td headers="BOOKING_ID_337520536480546924589305815606969289160">503</td><td headers="ROOM_ID_337520536480546924589305815606969289160">3</td><td headers="CUST_ID_337520536480546924589305815606969289160">3</td><td headers="BOOKINGDATE_337520536480546924589305815606969289160">29-MAR-23</td><td headers="CHECKIN_337520536480546924589305815606969289160">30-MAR-23</td><td headers="CHECKOUT_337520536480546924589305815606969289160">31-MAR-23</td></tr><tr><td headers="BOOKING_ID_337520536480546924589305815606969289160">504</td><td headers="ROOM_ID_337520536480546924589305815606969289160">1</td><td headers="CUST_ID_337520536480546924589305815606969289160">1</td><td headers="BOOKINGDATE_337520536480546924589305815606969289160">05-JAN-06</td><td headers="CHECKIN_337520536480546924589305815606969289160">06-JAN-06</td><td headers="CHECKOUT_337520536480546924589305815606969289160">08-JAN-06</td></tr><tr><td headers="BOOKING_ID_337520536480546924589305815606969289160">505</td><td headers="ROOM_ID_337520536480546924589305815606969289160">5</td><td headers="CUST_ID_337520536480546924589305815606969289160">4</td><td headers="BOOKINGDATE_337520536480546924589305815606969289160">17-JUN-10</td><td headers="CHECKIN_337520536480546924589305815606969289160">20-JUN-10</td><td headers="CHECKOUT_337520536480546924589305815606969289160">21-JUN-10</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+37</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement37" aria-label="Edit Statement 37" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405212634994903155576768873445\u0026cs=35TbRtCgf6bnEVVhdJR2qVueNVoCmf-7k0_UhYJj9-y5sflwiuTOpee3bjWsDrejsA3-ZPtbPL7PqPtrornpHAQ\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement37" aria-label="Run Statement 37" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405212634994903155576768873445"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 37" aria-label="Delete Statement 37" data-statement-id="337520627405212634994903155576768873445" fdprocessedid="jubw2i">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">UPDATE Customer SET addr = '789 Oak Avenue' WHERE cust_id = 1</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) updated.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+38</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement38" aria-label="Edit Statement 38" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405213843920722770205943579621\u0026cs=3TCYQKZUwVS2l2Q6JB71K8TfiTl8Mryf5-1J537Qbqm5EpflRBjjZmR909WRPjvlIlV4d1WWjTdIZcGfwgYmIrA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement38" aria-label="Run Statement 38" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405213843920722770205943579621"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 38" aria-label="Delete Statement 38" data-statement-id="337520627405213843920722770205943579621" fdprocessedid="n4oaln">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select * from Customer</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="CUST_ID_337520627405213843920722770205943579621">CUST_ID</th><th id="NAME_337520627405213843920722770205943579621">NAME</th><th id="ADDR_337520627405213843920722770205943579621">ADDR</th><th id="PHO_NO_337520627405213843920722770205943579621">PHO_NO</th><th id="EMAIL_337520627405213843920722770205943579621">EMAIL</th></tr><tr><td headers="CUST_ID_337520627405213843920722770205943579621">1</td><td headers="NAME_337520627405213843920722770205943579621">Surekha</td><td headers="ADDR_337520627405213843920722770205943579621">789 Oak Avenue</td><td headers="PHO_NO_337520627405213843920722770205943579621">1234567890</td><td headers="EMAIL_337520627405213843920722770205943579621">surekha@gmail.com</td></tr><tr><td headers="CUST_ID_337520627405213843920722770205943579621">3</td><td headers="NAME_337520627405213843920722770205943579621">Pravallika</td><td headers="ADDR_337520627405213843920722770205943579621">nellore</td><td headers="PHO_NO_337520627405213843920722770205943579621">9900887766</td><td headers="EMAIL_337520627405213843920722770205943579621">pravallika@gmail.com</td></tr><tr><td headers="CUST_ID_337520627405213843920722770205943579621">4</td><td headers="NAME_337520627405213843920722770205943579621">Rani</td><td headers="ADDR_337520627405213843920722770205943579621">bagalur</td><td headers="PHO_NO_337520627405213843920722770205943579621">6677889901</td><td headers="EMAIL_337520627405213843920722770205943579621">rani@gmail.com</td></tr><tr><td headers="CUST_ID_337520627405213843920722770205943579621">5</td><td headers="NAME_337520627405213843920722770205943579621">Vaishu</td><td headers="ADDR_337520627405213843920722770205943579621">chittor</td><td headers="PHO_NO_337520627405213843920722770205943579621">8899665541</td><td headers="EMAIL_337520627405213843920722770205943579621">vaishu@gmail.com</td></tr><tr><td headers="CUST_ID_337520627405213843920722770205943579621">2</td><td headers="NAME_337520627405213843920722770205943579621">Dhanu</td><td headers="ADDR_337520627405213843920722770205943579621">guntur</td><td headers="PHO_NO_337520627405213843920722770205943579621">3457838798</td><td headers="EMAIL_337520627405213843920722770205943579621">Dhanu@gmail.com</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+39</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement39" aria-label="Edit Statement 39" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480555387070043118011192232392\u0026cs=3j1OoJlY3UNjxEaRo970ruFKRUj-NwjYTa0jtOvB4vV1cICVAGuDZ0LvR3eT6opBDjI3c0bz8gLY-g2e8bSjmIw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement39" aria-label="Run Statement 39" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480555387070043118011192232392"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 39" aria-label="Delete Statement 39" data-statement-id="337520536480555387070043118011192232392" fdprocessedid="85kpa">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">UPDATE Rooms SET status = 'occupied' WHERE room_id = 1</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) updated.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+40</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement40" aria-label="Edit Statement 40" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520536480556595995862732640366938568\u0026cs=33zxq9TKd6bXMrIUWr1eHFOapti8t230bfSuch_TMNdXo_R5k-fUQv0hYSdhNNxHiIDXkPhZ-EPqHEIPgtDmLrw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement40" aria-label="Run Statement 40" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520536480556595995862732640366938568"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 40" aria-label="Delete Statement 40" data-statement-id="337520536480556595995862732640366938568" fdprocessedid="30bw7">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select * from Rooms</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="ROOM_ID_337520536480556595995862732640366938568">ROOM_ID</th><th id="ROOM_NO_337520536480556595995862732640366938568">ROOM_NO</th><th id="ROOM_TYPE_337520536480556595995862732640366938568">ROOM_TYPE</th><th id="CAP_337520536480556595995862732640366938568">CAP</th><th id="STATUS_337520536480556595995862732640366938568">STATUS</th><th id="RATE_PER_NIGHT_337520536480556595995862732640366938568">RATE_PER_NIGHT</th></tr><tr><td headers="ROOM_ID_337520536480556595995862732640366938568">1</td><td headers="ROOM_NO_337520536480556595995862732640366938568">101</td><td headers="ROOM_TYPE_337520536480556595995862732640366938568">Standard</td><td headers="CAP_337520536480556595995862732640366938568"> - </td><td headers="STATUS_337520536480556595995862732640366938568">occupied</td><td headers="RATE_PER_NIGHT_337520536480556595995862732640366938568">1000</td></tr><tr><td headers="ROOM_ID_337520536480556595995862732640366938568">2</td><td headers="ROOM_NO_337520536480556595995862732640366938568">102</td><td headers="ROOM_TYPE_337520536480556595995862732640366938568">Good</td><td headers="CAP_337520536480556595995862732640366938568"> - </td><td headers="STATUS_337520536480556595995862732640366938568">vacant</td><td headers="RATE_PER_NIGHT_337520536480556595995862732640366938568">2000</td></tr><tr><td headers="ROOM_ID_337520536480556595995862732640366938568">3</td><td headers="ROOM_NO_337520536480556595995862732640366938568">103</td><td headers="ROOM_TYPE_337520536480556595995862732640366938568">standard</td><td headers="CAP_337520536480556595995862732640366938568"> - </td><td headers="STATUS_337520536480556595995862732640366938568">full</td><td headers="RATE_PER_NIGHT_337520536480556595995862732640366938568">1500</td></tr><tr><td headers="ROOM_ID_337520536480556595995862732640366938568">4</td><td headers="ROOM_NO_337520536480556595995862732640366938568">104</td><td headers="ROOM_TYPE_337520536480556595995862732640366938568">Not bad</td><td headers="CAP_337520536480556595995862732640366938568"> - </td><td headers="STATUS_337520536480556595995862732640366938568">available</td><td headers="RATE_PER_NIGHT_337520536480556595995862732640366938568">1000</td></tr><tr><td headers="ROOM_ID_337520536480556595995862732640366938568">5</td><td headers="ROOM_NO_337520536480556595995862732640366938568">105</td><td headers="ROOM_TYPE_337520536480556595995862732640366938568">Normal</td><td headers="CAP_337520536480556595995862732640366938568"> - </td><td headers="STATUS_337520536480556595995862732640366938568">vacant</td><td headers="RATE_PER_NIGHT_337520536480556595995862732640366938568">500</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+41</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement41" aria-label="Edit Statement 41" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405240440288754292047787115493\u0026cs=3Q076tZkIP0Tx5bl4vSvVEzKVdbvuHnJToywagloUOeX5TE9Oxj7MdpRXHt52Yj6A1VYVVQcG6b9lB81G08i6jw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement41" aria-label="Run Statement 41" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405240440288754292047787115493"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 41" aria-label="Delete Statement 41" data-statement-id="337520627405240440288754292047787115493" fdprocessedid="fqz3ig">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">UPDATE Employees SET dep = 'maintenance' WHERE emp_id = 1</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) updated.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+42</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement42" aria-label="Edit Statement 42" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405241649214573906676961821669\u0026cs=3YSwrEChd4KU8gF50Ly2nXS2GxIGxLPLHceXefFByNVXeA4HMD1ODUT8lP7QFuysGVlwYv8jfuFINLhYk5vfCLg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement42" aria-label="Run Statement 42" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405241649214573906676961821669"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 42" aria-label="Delete Statement 42" data-statement-id="337520627405241649214573906676961821669" fdprocessedid="zd6or9">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select * from Employees</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="EMP_ID_337520627405241649214573906676961821669">EMP_ID</th><th id="NAME_337520627405241649214573906676961821669">NAME</th><th id="POS_337520627405241649214573906676961821669">POS</th><th id="DEP_337520627405241649214573906676961821669">DEP</th><th id="SALARY_337520627405241649214573906676961821669">SALARY</th><th id="HIRE_DATE_337520627405241649214573906676961821669">HIRE_DATE</th></tr><tr><td headers="EMP_ID_337520627405241649214573906676961821669">1</td><td headers="NAME_337520627405241649214573906676961821669">Aniket</td><td headers="POS_337520627405241649214573906676961821669">Manager</td><td headers="DEP_337520627405241649214573906676961821669">maintenance</td><td headers="SALARY_337520627405241649214573906676961821669">5000</td><td headers="HIRE_DATE_337520627405241649214573906676961821669">01-JAN-22</td></tr><tr><td headers="EMP_ID_337520627405241649214573906676961821669">2</td><td headers="NAME_337520627405241649214573906676961821669">sukanti</td><td headers="POS_337520627405241649214573906676961821669">cleaner</td><td headers="DEP_337520627405241649214573906676961821669">laber</td><td headers="SALARY_337520627405241649214573906676961821669">10000</td><td headers="HIRE_DATE_337520627405241649214573906676961821669">15-OCT-23</td></tr><tr><td headers="EMP_ID_337520627405241649214573906676961821669">3</td><td headers="NAME_337520627405241649214573906676961821669">Akshay</td><td headers="POS_337520627405241649214573906676961821669">accountant</td><td headers="DEP_337520627405241649214573906676961821669">clerk</td><td headers="SALARY_337520627405241649214573906676961821669">15000</td><td headers="HIRE_DATE_337520627405241649214573906676961821669">06-APR-22</td></tr><tr><td headers="EMP_ID_337520627405241649214573906676961821669">4</td><td headers="NAME_337520627405241649214573906676961821669">Anand</td><td headers="POS_337520627405241649214573906676961821669">supplier</td><td headers="DEP_337520627405241649214573906676961821669">Food</td><td headers="SALARY_337520627405241649214573906676961821669">7000</td><td headers="HIRE_DATE_337520627405241649214573906676961821669">15-MAY-24</td></tr><tr><td headers="EMP_ID_337520627405241649214573906676961821669">5</td><td headers="NAME_337520627405241649214573906676961821669">Ani</td><td headers="POS_337520627405241649214573906676961821669">asst Manager</td><td headers="DEP_337520627405241649214573906676961821669">Food</td><td headers="SALARY_337520627405241649214573906676961821669">10000</td><td headers="HIRE_DATE_337520627405241649214573906676961821669">09-DEC-23</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+43</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement43" aria-label="Edit Statement 43" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405254947398589667597883589605\u0026cs=3_9j00H3ybEv29-5D34803M3h4dsuwKpcXjlUjMVMDYH7QHWe2g-P0X45ngpEbQbi_UM3h9hoh7tFMTbn5TOhcg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement43" aria-label="Run Statement 43" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405254947398589667597883589605"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 43" aria-label="Delete Statement 43" data-statement-id="337520627405254947398589667597883589605" fdprocessedid="isalpo">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">UPDATE Hos_keeping  SET  task_desp = 'Food' WHERE hoskeeping_id = 2005</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) updated.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+44</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement44" aria-label="Edit Statement 44" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405256156324409282227058295781\u0026cs=3MR7VE8Z5ffQKzFlYcSLfIzc6PyvEOfFujuUFy_QbVqfvHVb0BJyeIDDK2qG6wfBJo_Q_5h5JrIE1QuOuojyYHw\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement44" aria-label="Run Statement 44" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405256156324409282227058295781"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 44" aria-label="Delete Statement 44" data-statement-id="337520627405256156324409282227058295781" fdprocessedid="zts3h">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select * from Hos_keeping </code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="HOSKEEPING_ID_337520627405256156324409282227058295781">HOSKEEPING_ID</th><th id="EMP_ID_337520627405256156324409282227058295781">EMP_ID</th><th id="TASK_DATE_337520627405256156324409282227058295781">TASK_DATE</th><th id="TASK_DESP_337520627405256156324409282227058295781">TASK_DESP</th></tr><tr><td headers="HOSKEEPING_ID_337520627405256156324409282227058295781">2001</td><td headers="EMP_ID_337520627405256156324409282227058295781">1</td><td headers="TASK_DATE_337520627405256156324409282227058295781">15-FEB-22</td><td headers="TASK_DESP_337520627405256156324409282227058295781">maintainance</td></tr><tr><td headers="HOSKEEPING_ID_337520627405256156324409282227058295781">2002</td><td headers="EMP_ID_337520627405256156324409282227058295781">2</td><td headers="TASK_DATE_337520627405256156324409282227058295781">10-DEC-23</td><td headers="TASK_DESP_337520627405256156324409282227058295781">brooming</td></tr><tr><td headers="HOSKEEPING_ID_337520627405256156324409282227058295781">2003</td><td headers="EMP_ID_337520627405256156324409282227058295781">3</td><td headers="TASK_DATE_337520627405256156324409282227058295781">05-MAY-22</td><td headers="TASK_DESP_337520627405256156324409282227058295781">finance</td></tr><tr><td headers="HOSKEEPING_ID_337520627405256156324409282227058295781">2004</td><td headers="EMP_ID_337520627405256156324409282227058295781">4</td><td headers="TASK_DATE_337520627405256156324409282227058295781">25-JUN-24</td><td headers="TASK_DESP_337520627405256156324409282227058295781">cleaning</td></tr><tr><td headers="HOSKEEPING_ID_337520627405256156324409282227058295781">2005</td><td headers="EMP_ID_337520627405256156324409282227058295781">5</td><td headers="TASK_DATE_337520627405256156324409282227058295781">20-DEC-23</td><td headers="TASK_DESP_337520627405256156324409282227058295781">Food</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+45</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement45" aria-label="Edit Statement 45" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405375839980551130515354207205\u0026cs=3O6PVDPpC2h421fE7ok2m4uxfopCyWeg5JinlAebVLHu2IDp_IUxBqeGgLsLredlPNCW4peTZY_IYO1mgns2FrA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement45" aria-label="Run Statement 45" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405375839980551130515354207205"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 45" aria-label="Delete Statement 45" data-statement-id="337520627405375839980551130515354207205" fdprocessedid="gv2pz">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">UPDATE Reservations  SET check_in_date  = TO_DATE('2023-06-14','YYYY-MM-DD') WHERE reser_id = 55</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">1 row(s) updated.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+46</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement46" aria-label="Edit Statement 46" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405377048906370745144528913381\u0026cs=3RmV80Jj5qrnbSsa3pcU20IHbhHd4D3K97CFW0PBthzACDtVk48V3V8bMg1tnpaxqlB4P0EWtYUYdN_rJ18aZAg\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement46" aria-label="Run Statement 46" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405377048906370745144528913381"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 46" aria-label="Delete Statement 46" data-statement-id="337520627405377048906370745144528913381" fdprocessedid="qawxkj">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select * from Reservations </code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="RESER_ID_337520627405377048906370745144528913381">RESER_ID</th><th id="CUST_ID_337520627405377048906370745144528913381">CUST_ID</th><th id="ROOM_ID_337520627405377048906370745144528913381">ROOM_ID</th><th id="CHECK_IN_DATE_337520627405377048906370745144528913381">CHECK_IN_DATE</th><th id="CHECK_OUT_DATE_337520627405377048906370745144528913381">CHECK_OUT_DATE</th></tr><tr><td headers="RESER_ID_337520627405377048906370745144528913381">11</td><td headers="CUST_ID_337520627405377048906370745144528913381">1</td><td headers="ROOM_ID_337520627405377048906370745144528913381">1</td><td headers="CHECK_IN_DATE_337520627405377048906370745144528913381">01-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405377048906370745144528913381">03-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405377048906370745144528913381">22</td><td headers="CUST_ID_337520627405377048906370745144528913381">2</td><td headers="ROOM_ID_337520627405377048906370745144528913381">2</td><td headers="CHECK_IN_DATE_337520627405377048906370745144528913381">04-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405377048906370745144528913381">06-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405377048906370745144528913381">33</td><td headers="CUST_ID_337520627405377048906370745144528913381">3</td><td headers="ROOM_ID_337520627405377048906370745144528913381">3</td><td headers="CHECK_IN_DATE_337520627405377048906370745144528913381">08-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405377048906370745144528913381">10-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405377048906370745144528913381">44</td><td headers="CUST_ID_337520627405377048906370745144528913381">4</td><td headers="ROOM_ID_337520627405377048906370745144528913381">4</td><td headers="CHECK_IN_DATE_337520627405377048906370745144528913381">11-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405377048906370745144528913381">14-JUN-23</td></tr><tr><td headers="RESER_ID_337520627405377048906370745144528913381">55</td><td headers="CUST_ID_337520627405377048906370745144528913381">5</td><td headers="ROOM_ID_337520627405377048906370745144528913381">5</td><td headers="CHECK_IN_DATE_337520627405377048906370745144528913381">14-JUN-23</td><td headers="CHECK_OUT_DATE_337520627405377048906370745144528913381">18-JUN-23</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a><br>5 rows selected.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+47</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement47" aria-label="Edit Statement 47" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520627405433868419892632715740103653\u0026cs=39B_wvM54nmEdLyaG54lrwYEI64XM57bUOpmnxxO2ss_HTmqULMKb5-iwDZNY_pPEpd1Sqndu1_HrazhBFPUfHA\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement47" aria-label="Run Statement 47" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520627405433868419892632715740103653"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 47" aria-label="Delete Statement 47" data-statement-id="337520627405433868419892632715740103653" fdprocessedid="urpy47">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">CREATE OR REPLACE TRIGGER check_room_availability  
+BEFORE INSERT OR UPDATE ON Booking  
+FOR EACH ROW 
+ DECLARE 
+room_count integer;  
+BEGIN  
+SELECT COUNT(*) INTO room_count  
+ FROM Rooms 
+WHERE room_id = :NEW.room_id  
+AND Status = 'Vacant';  
+if room_count = 0 THEN  
+RAISE_APPLICATION_ERROR(-20001,'Selected room is not available for the given date range.');  
+END if;  
+if room_count &gt; 0 THEN  
+DBMS_OUTPUT.PUT_LINE('Rooms are available for the given date range.');  
+ELSE 
+DBMS_OUTPUT.PUT_LINE('No rooms available for the given date range.');  
+END if;  
+END;     </code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Trigger created.</pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+48</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement48" aria-label="Edit Statement 48" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520602851227462256352945328544055814\u0026cs=3uC7ta6qvr1xbh_fjjJyPXsYHyo9oYia35A9eBRDY27rMpgEult0jrpJUlhtspAyVLFbbRBpn7mNsIEe9NvR3-Q\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement48" aria-label="Run Statement 48" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520602851227462256352945328544055814"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 48" aria-label="Delete Statement 48" data-statement-id="337520602851227462256352945328544055814" fdprocessedid="tbsmnp">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">select name from Customer where cust_id in (select cust_id from Booking where booking_id=502)</code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg"><table summary="SQL Query Results" class="u-Report">
+<tbody><tr><th id="NAME_337520602851227462256352945328544055814">NAME</th></tr><tr><td headers="NAME_337520602851227462256352945328544055814">Dhanu</td></tr>
+</tbody></table><a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#" class="download-table2CSV">Download CSV</a></pre>
+</div>
+</div>
+</div>
+</li>
+<li class="s-Session-item">
+<div class="media">
+<div class="media-graphic">
+<span class="s-Session-counter">Statement</span>
+<span class="s-Session-count">
+49</span><br><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillStart ls-Button--editStatement" title="Edit Statement49" aria-label="Edit Statement 49" href="javascript:apex.theme42.dialog(&#39;f?p=590:3:13550427334839:::3:P3_ID:337520602851250431846925623282863473158\u0026cs=3mg9vGnzs_DRMHw5NvjEuvfhURGC5QHNxIiWxKtTZPd-NIAvZq_pFBB-jFjd-bPpits-LadJ_5hqT49Uy0kfc-Q\u0026p_dialog_cs=4_lpCDHUJVvDJV_0wThQW_jUwRQlk-d3ZbGem0BFP8E6c7wI6La-N_cf862bTUN3Yd0TVYRnDdLWmx6Mvu9_5w&#39;,{title:&#39;Edit Statement&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--wizard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#R1010323300540197488&#39;))"><span class="t-Icon fa fa-pencil" aria-hidden="true"></span></a><a class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pill ls-Button--runStatement" title="Run Statement49" aria-label="Run Statement 49" href="https://livesql.oracle.com/apex/f?p=590:1:13550427334839:::1:P1_STATEMENT_ID:337520602851250431846925623282863473158"><span class="t-Icon fa fa-play" aria-hidden="true"></span></a><button class="t-Button t-Button--noLabel t-Button--small
+                        t-Button--pillEnd ls-Button--deleteStatement" type="button" title="Delete Statement 49" aria-label="Delete Statement 49" data-statement-id="337520602851250431846925623282863473158" fdprocessedid="x0gwos">
+                        <span class="t-Icon fa fa-trash-o" aria-hidden="true"></span></button></div>
+<div class="media-content">
+<div class="s-Session-codeWrap">
+<pre class="s-Session-code"><code class="highlight-sql">CREATE OR REPLACE FUNCTION insert_value(p_id NUMBER, p_name VARCHAR2)  
+RETURN NUMBER IS 
+BEGIN 
+ INSERT INTO Employees (emp_id, name) VALUES (p_id, p_name); 
+ COMMIT;  
+ RETURN SQL%ROWCOUNT;  
+EXCEPTION 
+ WHEN OTHERS THEN 
+ ROLLBACK;  
+ RAISE;  
+END;  </code></pre></div><div class="s-Session-result">
+<pre class="s-Session-msg">Function created.</pre>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></div>
+</div>
+</div>
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div id="R1035642224856162057" class=""><input type="hidden" name="P6_STATEMENT_ID" id="P6_STATEMENT_ID" value=""></div></div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div id="R1012157221149035436" class=""><span class="footer-sql"> 2023 Oracle</span> · Live SQL 23.2.2, running Oracle Database 19c EE Extreme Perf - 19.17.0.0.0 · <a href="https://docs.oracle.com/en/database/oracle/oracle-database/" target="_blank">Database Documentation</a>  · <a href="https://asktom.oracle.com/pls/apex/f?p=100:::::::" target="_blank">Ask Tom</a> · <a href="https://devgym.oracle.com/" target="_blank">Dev Gym</a><br><span class="u-BuiltWithAPEX">Built with <span class="fa fa-heart"><span class="u-VisuallyHidden">love</span></span> using <a href="https://apex.oracle.com/" target="_blank">Oracle APEX</a> · <a href="http://www.oracle.com/us/legal/privacy/overview/index.html" target="_blank">Privacy</a>  · <a href="http://www.oracle.com/us/legal/terms/index.html" target="_blank">Terms of Use</a> </span></div></div>
+</div>
+</div></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">23.2.2</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://livesql.oracle.com/apex/f?p=590:6:13550427334839:::::#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page"><span class="a-Icon icon-up-chevron"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/GlfgLL4h2E--KTVRgnSrl1pd94wCGtVGn91wUrmoTBfD2pgjqNKVHB8KvsPVdreFuhSfiX4ozz3bSfdtPiU3hQ"></form>
+
+
+<script>
+var apex_img_dir = "\u002Fi\u002F";
+var apex = {env: {APP_USER: "EDHANASHREE33@GMAIL.COM",APP_ID: "590",APP_PAGE_ID: "6",APP_SESSION: "13550427334839",APP_FILES: "r\u002Flivesql\u002F590\u002Ffiles\u002Fstatic\u002Fv424\u002F",WORKSPACE_FILES: "r\u002Flivesql\u002Ffiles\u002Fstatic\u002Fv1\u002F",APEX_VERSION: "22.1.3",APEX_BASE_VERSION: "22.1"},
+libVersions:{ckeditor5:"32.0.0",cropperJs:"1.5.12",domPurify:"2.3.1",hammer:"2.0.8",jquery:"3.6.0",jqueryUi:"1.13.1",maplibre:"1.15.2",markedJs:"4.0.12",prismJs:"1.26.0",oraclejet:"12.0.0",monacoEditor:"0.32.1",lessJs:"4.1.1"}};
+</script>
+<script src="./My Session - Oracle Live SQL_files/desktop_all.min.js.download"></script>
+<script src="./My Session - Oracle Live SQL_files/wwv_flow.js_messages"></script>
+
+<script type="text/javascript">
+apex.da.initDaEventList = function(){
+apex.da.gEventList = [
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":".ls-Button--deleteStatement","bindType":"bind","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:apex.da.askConfirm,"attribute02":"Are you sure you want to delete this statement?","action":"NATIVE_CONFIRM"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":false,"affectedElementsType":"ITEM","affectedElements":"P6_STATEMENT_ID",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"REEgVFlQRX5-Mjk1NDY0Mjc4OTA5NTU0MA\u002FWRBf6uFfziykr0i42-o-stf4wY6fLJduMJ5E3dj7xh4OhQQ01r-3hsxYMaw5cEK6K6srI9DAu-xwEMit14ZhgQ","attribute01":"JAVASCRIPT_EXPRESSION",attribute05:function(){return ($(this.triggeringElement).data('statement-id')
+)},"attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:apex.da.submitPage,"attribute01":"DELETE","attribute02":"Y","action":"NATIVE_SUBMIT_PAGE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P0_DARKMODE","bindType":"bind","bindEventType":"change","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $( "body" )
+    .toggleClass( "is-darkmode", apex.items.P0_DARKMODE.value == 'Y' )
+    .trigger( "theme-change" );
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,javascriptFunction:apex.da.executePlSqlCode,"ajaxIdentifier":"REEgVFlQRX5-NDIzNTg3NTQ4MTExNTEwOQ\u002F27RNK5f6AA-bgRVI4fDz4gcOqVRzrMBuya4AKEU4LjKrk7QgLCQ1Cr8mHI9CrCuvy91wPa14eqb0QBpQKRoPlg","attribute01":"#P0_DARKMODE","attribute04":"N","action":"NATIVE_EXECUTE_PLSQL_CODE"}]},
+{"bindEventType":"ready","anyActionsFireOnInit":true,actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"JQUERY_SELECTOR","affectedElements":".format-xml",javascriptFunction:function (){ $(this.affectedElements).each(function(){
+  var parser = new DOMParser();
+  var xmlDocument = parser.parseFromString($(this).text(),"text/xml");
+  xmlPP.print(xmlDocument, $(this)[0]);
+});
+formatJSON();
+},"action":"NATIVE_JAVASCRIPT_CODE"}]}];
+}
+</script>
+
+<script src="./My Session - Oracle Live SQL_files/widget.stickyWidget.min.js.download"></script>
+<script src="./My Session - Oracle Live SQL_files/theme42.min.js.download"></script>
+
+
+<script src="./My Session - Oracle Live SQL_files/script.min.js.download"></script>
+<script src="./My Session - Oracle Live SQL_files/table2CSV.js.download"></script>
+<script src="./My Session - Oracle Live SQL_files/widget.apexTabs.min.js.download"></script>
+
+<script src="./My Session - Oracle Live SQL_files/highlight.pack.js.download"></script>
+<script src="./My Session - Oracle Live SQL_files/xmlRenderer.min.js.download"></script>
+<script src="./My Session - Oracle Live SQL_files/xmlPrettyPrint.min.js.download"></script>
+<script src="./My Session - Oracle Live SQL_files/jsonPrettyPrint.min.js.download"></script>
+<script type="text/javascript">
+function checkJSON(str){
+  try {
+    var json = JSON.parse(str);
+    if (json && typeof json === "object") {
+      return json;
+    }
+  }
+  catch (e) { }
+  return false;
+};
+
+
+function formatJSON() {
+  $('.s-Session-result .u-Report td').each(function(){
+    cell$ = $(this);
+    var cell_text = $(this).text();
+    if (checkJSON(cell_text)) {
+      cell$.addClass("format-xml").text("");
+      var jp = JSON.parse(cell_text);
+      jPP.printJson(cell$[0],null,jp);
+    }
+  });
+}
+</script>  
+
+
+<script src="./My Session - Oracle Live SQL_files/widget.treeView.min.js.download"></script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+apex.session.initTimeouts(300,{"idle_time_ms":3586000.00000000000000000000000000000001,"life_time_ms":27543000,"max_idle_time_ms":3600000},'f?p=590:1000::::::','f?p=590:1000::::::');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.widget.yesNo("P0_DARKMODE","SWITCH_CB");})();
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){var e = apex.jQuery("#actions_menu", apex.gPageContext$);
+if (e.hasClass("js-addActions")) {
+  apex.actions.addFromMarkup( e );
+}
+e.menu({ iconType: 'fa', callout: e.hasClass("js-menu-callout")});})();
+(function(){apex.widget.selectList("#P6_SORT_ORDER",{"ajaxIdentifier":"SVRFTSBUWVBFfjUxMjB-MTAxMjI0ODkwNjA3MDAxNzU5Ng\u002FEgoLoQhncc_9zK7Qb-fFBXafVwZ8xvyJwt6HyC14Zq8Wdy1brUmO30TRPWYNNp0fT95Jva-yOxq9Ff640Z7lWw"});})();
+(function(){apex.widget.selectList("#P6_VIEW",{"ajaxIdentifier":"SVRFTSBUWVBFfjUxMjB-MTAxMjgyMjgyMzg5NDYzMjI3NA\u002FlGBUVL5woSZ8K2vMcCMf0s96PUvAhKnuwbCAaNvMyR2GMsu_5S4GPTx26a_8wfnravw9S6eaI6q6merxlNKYGQ"});})();
+(function(){apex.widget.selectList("#P6_INCLUDE",{"ajaxIdentifier":"SVRFTSBUWVBFfjUxMjB-MTc3NDU0ODYzOTgxMzgwMDM\u002FrOgfTGP7uMQrXd1yRMnqxypxVLLeIFYAPm2z3Tv8T2NLBg6krRs1X2t1bz9FmgnecgGb1nEKQ290usW46_jH3w"});})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+(function(){apex.da.initDaEventList();
+apex.da.init();})();
+apex.theme42.initializePage.noSideCol();
+hljs.initHighlightingOnLoad();
+createCSVDownloadLink('.s-Session-msg table.u-Report');
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.registerServiceWorker('\u002Fapex\u002Fr\u002Flivesql\u002Flivesql\u002Fsw.js?v=22.1.3-140873327249\u0026lang=en');
+</script>
+
+
+
+<input id="apexCBMDummySelection" style="display:none;" value="x"><div id="pushModal" style="width: 100%; display:none; height: 100%;" class="u-DisplayNone u-Overlay--glass"></div><div id="actions_menu" class="a-Menu" style="display:none;" role="menu"><ul><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon="fa fa-play-circle-o"><a href="javascript:apex.theme42.dialog(&#39;f?p=590:48:13550427334839:::48:P48_ID:337520353986804282134537984203395469219\u0026cs=38IyLYMCVsbN-FMLARs-A0D6jdR9iiyoqcm5gbgjkD6FrXbiuynE44L8kprrJ39D_CzHq-PJJnSkzxAMpzvn9rA\u0026p_dialog_cs=A68k90utAjFPPUtZYKWsdZGXqkajmvsZ7RT5NWWhGq61GScgNX6f7PRGCEsFU9XipCP9VkedRrDz_59Cldx8pA&#39;,{title:&#39;Re-Run Session&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#actions_menu&#39;))" title="" target="">Re-Run</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon="fa fa-retweet"><a href="javascript:apex.theme42.dialog(&#39;f?p=590:2:13550427334839\u0026p_dialog_cs=2aSTp8MvxJ-6-ML4prPB83w20isI3kCvjpETujeRYaT2YCuRsbaoC76TAd0WF8sfDmbmCFLTIYO8FfrIULKRgg&#39;,{title:&#39;Replace Script&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#actions_menu&#39;))" title="" target="">Replace Script</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon="fa fa-trash-o"><a href="https://livesql.oracle.com/apex/f?p=590:9:13550427334839:LOAD::RP,RP::" title="" target="">Delete Statements</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon="fa fa-cloud-download"><a href="javascript:apex.theme42.dialog(&#39;f?p=590:602:13550427334839\u0026p_dialog_cs=e9MfG5BBlfLMv21am-UT4efGw0mQDChHm9lfIQdC2UEBQ1Msi_QMrT7ZWsZtyfNx8TztuDhvF7VbagtuK-1nqw&#39;,{title:&#39;Download Session&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.jQuery(&#39;#actions_menu&#39;))" title="" target="">Download</a></li>
+</ul></div><div class="t-NavigationBar-menu a-Menu" style="display: none" id="menu_L7178662666532670" role="menu"><ul><li class="" data-current="false" data-icon=""><a href="javascript:apex.theme42.dialog(&#39;f?p=590:8:13550427334839:::RP\u0026p_dialog_cs=LyD1xZ1oAh0Rtn5ONdTqfhSvNgI5qIet_sM5o0c25sssbf9uZsEq09tYa1fl1gnzpdJ6YvkJyrNuvJoXY5021g&#39;,{title:&#39;Notifications&#39;,h:&#39;auto&#39;,w:&#39;720&#39;,mxw:&#39;960&#39;,modal:true,dialog:null,dlgCls:&#39;t-Dialog-page--standard &#39;+&#39;&#39;},&#39;&#39;,apex.gPageContext$)" title="" target="">Notifications</a></li><li class="" data-current="false" data-icon=""><a href="https://livesql.oracle.com/apex/apex_authentication.logout?p_app_id=590&amp;p_session_id=13550427334839" title="" target="">Sign Out</a></li></ul></div></body></html>
